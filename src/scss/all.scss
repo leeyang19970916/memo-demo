@@ -1,0 +1,16 @@
+
+@import "cssrest.scss";
+@import "_LeftMemo.scss";
+@import "_MidMemo.scss";
+@import "_RightMemo.scss";
+.dd-change{
+    display: block;
+    @media screen and (max-width:768px) {
+        display: none;
+      }
+}
+// RWD QUILTOR 對其
+// category 調整一下 變得更好看
+// 或是字體改小 不用這麼大 整串都是
+// cookies
+// git上傳

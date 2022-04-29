@@ -1,0 +1,222 @@
+
+#left{
+    height:100vh;
+    background: #324157;
+    padding: 0px;
+    color:#F9F2FC;
+    transition: all 0.1s ease-in;
+    &.dNone{
+        display: none;
+    }
+    @media screen and (max-width:1200px) {
+        max-width: 70px;
+        min-width: 70px;
+      }
+    @media screen and (max-width:768px) {
+        // display: none;
+    }
+        &.short-left{
+            max-width: 70px;
+        }
+        .textCenter{
+            @media screen and (max-width:768px) {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                text-align: center;
+            }
+            .user-iconblock{
+                font-size: 25px;
+                vertical-align: middle;
+                // transition: all 10s;
+                position: relative;
+                .user-icon{
+                 
+                    background: #8492A6;
+                    color:#f2fcf3;
+                    border-radius: 50px;
+                    font-weight: bolder;
+        
+                }
+                // .animate__fadeIn{
+                span{
+                    &.dynamicUser{
+                        position:absolute;
+                        // left:0;
+                        // width:50px;
+                        // height:50px;
+                        // background:#f00;
+                        animation-name:dynamicUser;
+                        animation-duration:0s;
+                        animation-fill-mode:forwards;
+                        @media screen and (max-width:1200px) {
+                            display: none;
+                          }
+                    }
+                    @keyframes dynamicUser{
+                        from{
+                            left:-100px;
+                        }
+                        to{
+                            left:35px;
+                        }
+                    }
+                }
+            }
+        }
+        .addbtn-block{
+            padding-left: 1.5rem;
+            position: relative;
+            &.addbtn-block-short{
+                padding-left: 0px;
+                text-align: center;
+            }
+            .btn-newnote{
+                background: #13CE66;
+                color:#fff;
+                border: #13CE66 1px solid;
+                &:focus{
+                    box-shadow:none;
+                }
+                &:hover{
+                    background: #10b45a;
+                    color:rgb(255, 255, 255);
+                }
+                &.short-btn-position{
+                    position: absolute;
+                    left: 10px;
+                    @media screen and (max-width:1200px) {
+                        display: block !important;
+                      }
+                    @media screen and (max-width:768px) {
+                    display: none !important;
+                    }
+                }
+                &.btn-position-RWD{
+                    display: none;
+                    @media screen and (max-width:768px) {
+                        display: block ;
+                        position: absolute;
+                        left: 11px;
+                      }
+                }
+                &.dynamicBtn{
+                    position:absolute;
+                    // left:0;
+                    // width:50px;
+                    // height:50px;
+                    // background:#f00;
+                   
+                    // top: 7px;
+                    background: #13CE66;
+                    animation-name:dynamicBtn;
+                    animation-duration:0.2s;
+                    animation-fill-mode:forwards;
+                    &:hover{
+                        background: #10b45a;
+                        color:rgb(255, 255, 255);
+                    }
+                    @media screen and (max-width:1200px) {
+                        display: none;
+                      }
+                }
+                @keyframes dynamicBtn{
+                    from{
+                        left:-100px;
+                    }
+                    to{
+                        left:25px;
+                    }
+                }
+            }
+    
+                
+        }
+        .list-set-block{
+            margin-top: 2.5rem;
+            // @media screen and (max-width:768px) {
+            //     margin-top: 1.5rem;
+            //   }
+            .list-set{
+                color:#bfcbd9;
+                vertical-align: middle;
+                font-size: 20px;
+                font-weight: normal;
+                &.list-active{
+                    font-weight: bold;
+                    background: #324d71;
+                    color:#fff;
+                }
+                &.list-set1{
+                    
+                    &:hover{
+                        background: #475669;
+                        color:#F9FAFC;
+                    }
+                }
+                &.list-set2{
+                    &:hover{
+                        background: #475669;
+                        color:#F9FAFC;
+                    }
+                }
+                &.list-set3{
+                    &:hover{
+                        background: #475669;
+                        color:#F9FAFC;
+                    }
+                }
+                .list-icon{
+                    padding: 0 5px 0 24px;
+                }
+                .list-icon1{
+                    padding: 0 0 0 28px;
+                }
+                .list-icon2{
+                    padding: 0 10px 0 27px;
+                }
+                    span{
+                        &.dynamicList{
+                            position:absolute;
+                            // left:0;
+                            // width:50px;
+                            // height:50px;
+                            // background:#f00;
+                            animation-name:dynamicList;
+                            animation-duration:0.3s ;
+                            animation-fill-mode:forwards;
+
+                        }
+                        @keyframes dynamicList{
+                            from{
+                                left:-100px;
+                            }
+                            to{
+                                left:55px;
+                            }
+                        }
+                        @media screen and (max-width:1200px) {
+                            display: none;
+                          }
+                    }
+            }
+            
+        }
+        .btn-position{
+            position: absolute;
+            bottom: 30px; 
+            right: 0;
+            border-radius: 4px;
+            background-color: #475669;
+            color: rgba(249, 250, 252, 0.5);
+            padding: 5px 8px;
+            transition: all 0.2s ease-in;
+            &:hover{
+                color:#F9FAFC;
+                bottom: 27px;
+                font-size: 20px;
+            }
+            @media screen and (max-width:1200px) {
+                display: none;
+              }
+        }
+    }
